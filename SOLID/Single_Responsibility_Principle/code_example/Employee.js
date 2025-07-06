@@ -1,3 +1,6 @@
+const EmployeeRepository = require("./EmployeeRepository");
+const TaxCalculator = require("./TaxCalculator");
+
 class Employee {
   #employeeId;
   #employeeName;
@@ -71,34 +74,6 @@ class Employee {
 
   get employeeType() {
     return this.#employeeType;
-  }
-}
-
-class EmployeeRepository {
-  #employeeList = [];
-
-  save(employee) {
-    // The method where DB connection can be handled and employee object can be saved
-    console.log(
-      `Saving employee to database ===>`,
-      employee
-    );
-    this.#employeeList.push(employee);
-    return true;
-  }
-}
-
-class TaxCalculator {
-  #employeeTax;
-  calculateTax(employeeType) {
-    if (employeeType === "fulltime") {
-      this.#employeeTax = 30;
-    } else if (employeeType === "contract") {
-      this.#employeeTax = 20;
-    } else {
-      this.#employeeTax = null;
-    }
-    return this.#employeeTax;
   }
 }
 
