@@ -6,4 +6,4 @@
 
 **Coupling** - Level of inter dependency between varius software components.
 
-***Aim for High Cohesion and Low Coupling***  
+**_Aim for High Cohesion and Low Coupling_**
