@@ -1,15 +1,18 @@
-const EmployeeRepository = require("./EmployeeRepository");
-const TaxCalculator = require("./TaxCalculator");
-
 class Employee {
   #employeeId;
   #employeeName;
   #employeeAdress;
   #contactNumber;
   #employeeType;
+  #employeeRepository;
+  #taxCalculator;
 
-  save(employeeRepository) {
-    // const employeeRepository = new EmployeeRepository();
+  constructor(employeeRepository, taxCalculator) {
+    this.#employeeRepository = employeeRepository;
+    this.#taxCalculator = taxCalculator;
+  }
+
+  save() {
     const employee = {
       employeeId: this.employeeId,
       employeeName: this.employeeName,
@@ -17,12 +20,13 @@ class Employee {
       contactNumber: this.contactNumber,
       employeeType: this.employeeType,
     };
-    return employeeRepository.save(employee);
+    return this.#employeeRepository.save(employee);
   }
 
-  calculateTax(taxCalculator) {
-    // const taxCalculator = new TaxCalculator();
-    return taxCalculator.calculateTax(this.#employeeType);
+  calculateTax() {
+    return this.#taxCalculator.calculateTax(
+      this.#employeeType
+    );
   }
 
   set employeeId(value) {
@@ -77,21 +81,4 @@ class Employee {
   }
 }
 
-const employee = new Employee();
-employee.employeeId = "123";
-employee.employeeName = "Max Biaggi";
-employee.contactNumber = "+91 6768992123";
-employee.employeeAdress = "5A 1st street, Menlo Park";
-employee.employeeType = "fulltime";
-
-const employeeRepository = new EmployeeRepository();
-employee.save(employeeRepository);
-
-const taxCalculator = new TaxCalculator();
-const tax = employee.calculateTax(taxCalculator);
-
-if (tax) {
-  console.log(
-    `Employee => ID: ${employee.employeeId}, Name: ${employee.employeeName}, is a ${employee.employeeType} employee and will bear a ${tax}% tax`
-  );
-}
+module.exports = Employee;
