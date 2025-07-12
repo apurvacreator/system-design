@@ -1,14 +1,12 @@
 import { PaymentMethod } from "./PaymentMethod";
 
 export class UPI implements PaymentMethod {
-  #upiId: string;
+  private upiId: string;
   constructor(upiId) {
-    this.#upiId = upiId;
+    this.upiId = upiId;
   }
 
   pay(amount: number) {
-    console.log(
-      `Paying ${amount} using UPI ${this.#upiId}`
-    );
+    console.log(`Paying ${amount} using UPI ${this.upiId}`);
   }
 }

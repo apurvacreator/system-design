@@ -1,12 +1,12 @@
 import { NotificationChannel } from "./NotificationChannel";
 
 export class NotificationService {
-  #notificationChannel: NotificationChannel;
+  private notificationChannel: NotificationChannel;
   constructor(notificationChannel) {
-    this.#notificationChannel = notificationChannel;
+    this.notificationChannel = notificationChannel;
   }
 
   sendNotification(message) {
-    this.#notificationChannel.send(message);
+    this.notificationChannel.send(message);
   }
 }
