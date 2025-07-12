@@ -1,6 +1,6 @@
 ## Interface Segregation Principle
 
-### No client should be forced to deplend on methods it does not use.
+### No client should be forced to depend on methods it does not use.
 
 ### Techniques to identify violations of ISP
 
