@@ -17,4 +17,6 @@
 
 **Command Pattern**: Design pattern that turns a request into a stand-alone object containing all the information about the request. This enables you to parameterize methods with different requests, queue or log requests, and support undo operations.
 
-**Template Method**: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. It lets subclasses override specific steps without changing the overall structure of the algorithm.
+**Template Method Pattern**: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. It lets subclasses override specific steps without changing the overall structure of the algorithm.
+
+**Iterator Pattern**: Design pattern that allows you to traverse elements of a collection without exposing its underlying representation.
