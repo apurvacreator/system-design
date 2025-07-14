@@ -1,0 +1,8 @@
+import { CSVParser } from "./CSVParser";
+import { JSONParser } from "./JSONParse";
+
+const csvParser = new CSVParser();
+csvParser.parse();
+
+const jsonParser = new JSONParser();
+jsonParser.parse();
