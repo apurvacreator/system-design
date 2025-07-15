@@ -20,3 +20,5 @@
 **Template Method Pattern**: Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. It lets subclasses override specific steps without changing the overall structure of the algorithm.
 
 **Iterator Pattern**: Design pattern that allows you to traverse elements of a collection without exposing its underlying representation.
+
+**State Pattern**: Allows an object to change its behavior when its internal state changes—almost like switching out its brain mid-action 🧠✨. It’s handy when you have objects that behave differently based on their current condition or mode.
