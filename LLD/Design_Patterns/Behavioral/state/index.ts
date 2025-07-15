@@ -15,3 +15,5 @@ console.log(order.getState());
 
 order.next();
 console.log(order.getState());
+
+// More example => Navigation, State => Mode of Transportation. Context => Direction service

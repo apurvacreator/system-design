@@ -22,3 +22,5 @@
 **Iterator Pattern**: Design pattern that allows you to traverse elements of a collection without exposing its underlying representation.
 
 **State Pattern**: Allows an object to change its behavior when its internal state changes—almost like switching out its brain mid-action 🧠✨. It’s handy when you have objects that behave differently based on their current condition or mode.
+
+**Mediator Pattern**: Facilitates communication between different objects (called colleagues) by introducing a separate mediator object. This helps reduce tight coupling between components.
