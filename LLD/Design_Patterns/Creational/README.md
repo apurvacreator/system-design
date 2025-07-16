@@ -8,3 +8,5 @@
 **Factory Pattern**: Design pattern that provides a way to create objects without exposing the instantiation logic to the client. Instead of using new directly, you use a factory method to get instances, often based on input or conditions.
 
 **Abstract Factory Pattern**: Design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. It’s like a factory of factories, giving you a flexible way to create groups of objects that work well together.
+
+**Builder Design Pattern**: Separates the construction of a complex object from its representation. Instead of cramming all the logic into one huge constructor, the builder breaks it down step-by-step — offering flexibility and clarity, especially when an object has many optional parameters.
