@@ -4,3 +4,5 @@
 - They help in organizing class hierarchies and allow for easy modification and extension.
 
 **Adapter Pattern**: Design pattern that allows incompatible interfaces to work together. It acts as a bridge between two objects, converting one interface into another that a client expects.
+
+**Decorator Pattern**: Design pattern used to add new behaviors to objects dynamically—without modifying their original structure. It’s like wrapping a present: each wrapper adds something new without changing the gift itself.
