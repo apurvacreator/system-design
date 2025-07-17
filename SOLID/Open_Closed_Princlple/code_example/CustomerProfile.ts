@@ -1,3 +1,3 @@
 export interface CustomerProfile {
-    isLoyal(): boolean
+  isLoyal(): boolean;
 }

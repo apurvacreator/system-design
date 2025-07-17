@@ -1,28 +1,29 @@
 import { IFax, IPrint, IScan } from "./interfaces";
 
-export class XeroxWorkCenter implements IPrint, IScan, IFax {
+export class XeroxWorkCenter
+  implements IPrint, IScan, IFax
+{
+  print(): void {
+    // Assume Print logic
+  }
 
-    print(): void {
-        // Assume Print logic
-    }
- 
-    getPrintSpoolDetails(): void {
-        // Assume getPrintSpoolDetails logic
-    }
+  getPrintSpoolDetails(): void {
+    // Assume getPrintSpoolDetails logic
+  }
 
-    scan(): void {
-        // Assume scan logic
-    }
+  scan(): void {
+    // Assume scan logic
+  }
 
-    scanPhoto(): void {
-        // Assume scan photo logic
-    }
+  scanPhoto(): void {
+    // Assume scan photo logic
+  }
 
-    fax(): void {
-        // Assume fax logic
-    }
+  fax(): void {
+    // Assume fax logic
+  }
 
-    internetFax(): void {
-        // Assume internet fax
-    }
+  internetFax(): void {
+    // Assume internet fax
+  }
 }

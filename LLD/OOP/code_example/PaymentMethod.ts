@@ -1,3 +1,3 @@
 export interface PaymentMethod {
-    pay: () => void
+  pay: () => void;
 }

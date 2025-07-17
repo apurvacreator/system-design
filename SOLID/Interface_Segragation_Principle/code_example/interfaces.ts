@@ -13,16 +13,16 @@
 // This allows adheres to SRP in SOLID
 
 export interface IPrint {
-    print(): void,
-    getPrintSpoolDetails(): void
+  print(): void;
+  getPrintSpoolDetails(): void;
 }
 
 export interface IScan {
-    scan(): void,
-    scanPhoto(): void
+  scan(): void;
+  scanPhoto(): void;
 }
 
 export interface IFax {
-    fax(): void,
-    internetFax(): void
+  fax(): void;
+  internetFax(): void;
 }

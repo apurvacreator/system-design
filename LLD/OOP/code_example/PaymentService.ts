@@ -1,19 +1,22 @@
 import { PaymentMethod } from "./PaymentMethod";
 
 export class PaymentService {
-    paymentMethods: Map<string, PaymentMethod>;
+  paymentMethods: Map<string, PaymentMethod>;
 
-    constructor() {
-        this.paymentMethods = new Map();
-    }
+  constructor() {
+    this.paymentMethods = new Map();
+  }
 
-    addPaymentMethod(name: string, paymentMethod: PaymentMethod) {
-        this.paymentMethods.set(name, paymentMethod);
-    }
+  addPaymentMethod(
+    name: string,
+    paymentMethod: PaymentMethod
+  ) {
+    this.paymentMethods.set(name, paymentMethod);
+  }
 
-    makePayment(name: string) {
-        const pm = this.paymentMethods.get(name);
-        // Polymorphism
-        pm?.pay();
-    }
+  makePayment(name: string) {
+    const pm = this.paymentMethods.get(name);
+    // Polymorphism
+    pm?.pay();
+  }
 }

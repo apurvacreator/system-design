@@ -1,3 +1,3 @@
 export interface IProductRepository {
-    getAllProductNames(): String[]
+  getAllProductNames(): String[];
 }

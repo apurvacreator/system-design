@@ -1,13 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2022",          // or "ESNext"
-    "module": "CommonJS",        // or "ESNext" depending on your environment
-    "lib": ["ES2022", "DOM"],    // optional, ensures compatibility
-    // "strict": true,              // enables strict type-checking
-    // "esModuleInterop": true,     // for module compatibility
-    // "forceConsistentCasingInFileNames": true,
-    // "skipLibCheck": true,
     "outDir": "./dist"
-  },
-  "include": ["*"]
+    // Other compiler options...
+  }
 }
