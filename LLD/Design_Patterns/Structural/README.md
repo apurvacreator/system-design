@@ -9,4 +9,6 @@
 
 **Proxy Pattern**: Design pattern that provides a surrogate or placeholder for another object to control access to it. It's especially useful when you want to add functionality (like access control, lazy initialization, logging, etc.) without changing the original object's code.
 
-**Composite Pattern**: Design pattern used to treat individual objects and compositions of objects uniformly. It’s especially useful when dealing with tree-like structures
+**Composite Pattern**: Design pattern used to treat individual objects and compositions of objects uniformly. It’s especially useful when dealing with tree-like structures.
+
+**Facade Pattern**: Design pattern that provides a simplified interface to a complex subsystem. It’s like a front desk at a hotel—you don’t need to know how everything works behind the scenes; you just interact with one point of contact.
