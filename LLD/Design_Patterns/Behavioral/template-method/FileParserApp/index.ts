@@ -1,5 +1,5 @@
 import { CSVParser } from "./CSVParser";
-import { JSONParser } from "./JSONParse";
+import { JSONParser } from "./JSONParser";
 
 const csvParser = new CSVParser();
 csvParser.parse();
