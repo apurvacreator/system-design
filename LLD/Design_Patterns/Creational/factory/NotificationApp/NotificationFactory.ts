@@ -1,9 +1,10 @@
 import { EmailNotification } from "./EmailNotification";
+import { Notification } from "./Notification";
 import { PushNotification } from "./PushNotification";
 import { SMSNotification } from "./SMSNotification";
 
 export class NotificationFactory {
-  static createClient(type) {
+  static createClient(type: string): Notification {
     switch (type.toLowerCase()) {
       case "email":
         return new EmailNotification();
