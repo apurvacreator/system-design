@@ -6,5 +6,5 @@ let pizza = new BasicPizza();
 pizza = new CheeseDecorator(pizza);
 pizza = new OliveDecorator(pizza);
 
-console.log(pizza.getDescription());
-console.log(pizza.getCost());
+console.log(`Your Pizza: ${pizza.getDescription()}`);
+console.log(`Total cost: $${pizza.getCost()}`);
